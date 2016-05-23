@@ -1,4 +1,71 @@
 # graphtrees
+
+## English (英语)
+
+This translation is a work in progress.
+
+### Features
+
+Graphtrees allows you to view a "tree" of all available graphs, directly in the Zabbix Web Interface.
+
+* "Showcase all grouping device"
+* "The image showcases a packet"
+* "Showcasing a device image"
+* "Application display Equipment Under"
+* "Application under each picture show"
+* "The log shows each application under"
+* "To monitor the entry of native non-plotted graph"
+* "Attention to the problem"
+  * "In the group and host level, only the default display system configuration graph."
+  * "Click the application, it will display three kinds of data:"
+    1. "The system has a graph of default"
+    2. "The graph of non-default"
+    3. "Log class"
+
+### Installation
+  
+Requires Zabbix Version 3.0.1/3.0.2/3.0.3
+
+#### Manual Installation
+
+```
+cd (your Zabbix-web directory)
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
+yum install -y patch
+patch  -Np0 <graphtree3-0-1.patch
+```
+
+Alternately, you may place all files from the "web" directory (in this repository) in your Zabbix-Web directory, and modify the configuration.
+
+#### Zabbix RPM Installation Notes
+
+The following steps should be taken if your Zabbix installation was from the official Zabbix RPMs.
+
+(Note - replate 3.0.1 with 3.0.2/3.0.3 as needed)
+
+```
+mkdir  /tmp/zbx
+mv  /usr/share/zabbix /usr/share/zabbix-old
+wget http://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/3.0.1/zabbix-3.0.1.tar.gz
+tar xf zabbix-3.0.1.tar.gz
+cd zabbix-3.0.1/frontends/php
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
+yum install -y patch
+patch  -Np0 <graphtree3-0-1.patch
+cp -r /tmp/zbx/zabbix-3.0.1/frontends/php /usr/share/zabbix
+cp /usr/share/zabbix-old/conf/zabbix.conf.php /usr/share/zabbix/conf/
+```
+### Screenshots (Installed)
+
+http://t.cn/RqAeAxT
+
+### External Links
+
+* [Graphtree-for-Zabbix on Share.Zabbix.com](https://share.zabbix.com/cat-app/graphtree-for-zabbix)
+* [Developer's Twitter Feed](https://twitter.com/itnihao)
+* [Developer's Site](http://www.oneoaas.com/)
+
+## 中文 (Chinese)
 ###功能
 ```
 一、集中展示所有分组设备
