@@ -41,7 +41,7 @@ Alternately, you may place all files from the "web" directory (in this repositor
 
 The following steps should be taken if your Zabbix installation was from the official Zabbix RPMs.
 
-(Note - replate 3.0.1 with 3.0.2/3.0.3 as needed)
+(Note - replace 3.0.1 with 3.0.2/3.0.3 as needed)
 
 ```
 mkdir  /tmp/zbx
