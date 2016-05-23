@@ -82,7 +82,8 @@ http://t.cn/RqAeAxT
     2. 系统默认无graph的；
     3. 日志类的
 ```
-##zabbix版本要求 3.0.1/3.0.2/3.0.3
+zabbix 版本要求 3.0.1/3.0.2/3.0.3
+
 ###安装
 ```
 cd 您的Zabbix-WEB目录
@@ -92,7 +93,7 @@ patch  -Np0 <graphtree3-0-1.patch
 
 或者下载web下的所有文件替换您的Zabbbix-WEB目录下的所有文件，修改配置即可
 ```
-#官方RPM包安装的如下
+### 官方RPM包安装的如下
 ```
 mkdir  /tmp/zbx
 mv  /usr/share/zabbix /usr/share/zabbix-old
@@ -107,5 +108,5 @@ cp /usr/share/zabbix-old/conf/zabbix.conf.php /usr/share/zabbix/conf/
 如果是3.0.2/3.0.3 使用同样方法即可
 ```
 
-#实现效果
+###实现效果
 http://t.cn/RqAeAxT
